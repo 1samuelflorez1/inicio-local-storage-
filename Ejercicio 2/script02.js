@@ -9,7 +9,19 @@
  *  Abrir el enlace con otro navegador ¿Que pasa?
  * */ 
  
+let libro = {
+    Nombre: "Zaratrustra",
+    Año: 2006,
+    Autor: "Nietzsche",
+    Genero: "Filosofia"
+}
+localStorage.setItem('libro', libro)    //se guarda con la clave del libro y el elemento del libro
+                                        //si se guerda de esta forma, no aparece el contenido del objeto
+                                        //aparece la palabra (objeto)
+console.log(libro)
 
 
-
+let libroJSON = JSON.stringify(libro)
+localStorage.setItem('libroJSON', libroJSON) //para que aparezca el contenido del objeto, se serializa de esta forma
+console.log(libroJSON)
 
