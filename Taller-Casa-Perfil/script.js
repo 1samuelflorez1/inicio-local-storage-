@@ -21,18 +21,9 @@
     console.log(perfilGuardado)
 
     // Mostrar los datos en el div con id="perfil"
+    const miDiv = document.getElementById('contenido-perfil')
 
-    
-    function mostrarPerfil(){
-      const contenido = document.getElementById('contenido-perfil')
-      contenido.innerHTML = ''
-
-        const miDiv = document.createElement('div')
-          miDiv.innerHTML = `
-          
-          <p>${perfil.nombre}</p>
-          <p>${perfil.nombre}</p>
-
-          `
-        contenido.appendChild(miDiv)
-    }
+    let nombreJS = localStorage.getItem("nombre")
+    const nombre = document.createElement('h1')
+    h1.perfil = nombre
+    miDiv.appendChild('h1')
